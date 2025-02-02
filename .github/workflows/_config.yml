@@ -1,0 +1,15 @@
+title: Cinefilo - Gerenciador de Produções
+description: Uma aplicação web para gerenciar suas produções cinematográficas
+theme: jekyll-theme-cayman
+github:
+  is_project_page: true
+  repository_url: https://github.com/mannuwell/Cinefilo
+
+# Configurações adicionais
+markdown: kramdown
+highlighter: rouge
+
+# Plugins (opcional)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
