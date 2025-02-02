@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Como Se Fosse a Primeira Vez",
+    "type": "filme",
+    "genre": "Comédia",
+    "year": 2004,
+    "rating": 6.9,
+    "id": 3
+  },
+  {
+    "title": "Big Bang: A Teoria",
+    "type": "serie",
+    "genre": "Comédia",
+    "year": 2007,
+    "rating": 7.9,
+    "id": 2
+  },
+  {
+    "title": "Esposa de Mentirinha",
+    "type": "filme",
+    "genre": "Comédia",
+    "year": 2011,
+    "rating": 6.7,
+    "id": 3
+  },
+  {
+    "title": "Tropa de Elite",
+    "type": "filme",
+    "genre": "Drama",
+    "year": 2007,
+    "rating": 8,
+    "id": 5
+  },
+  {
+    "title": "Se Beber, Não Case! - Parte III",
+    "type": "filme",
+    "genre": "Comédia",
+    "year": 2013,
+    "rating": 6.2,
+    "id": 6
+  },
+  {
+    "title": "The Rookie",
+    "type": "serie",
+    "genre": "Crime",
+    "year": 2018,
+    "rating": 8.5,
+    "id": 6
+  }
+]
