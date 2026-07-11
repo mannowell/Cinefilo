@@ -3,35 +3,67 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg?logo=nodedotjs)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.x-black.svg?logo=express)](https://expressjs.com/)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26.svg?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6.svg?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Descrição
 
-Cinefilo é uma aplicação web para gerenciar suas produções cinematográficas favoritas. Com recursos de adicionar, listar e excluir produções, esta aplicação oferece uma experiência simples e intuitiva.
+Cinefilo é uma aplicação web para gerenciar suas produções cinematográficas favoritas. Com recursos de adicionar, editar, listar, buscar e excluir produções, esta aplicação oferece uma experiência simples e intuitiva.
 
 ## Funcionalidades
 
-- Adicionar filmes e séries
-- Busca e filtro de produções
-- Exclusão de produções
-- Interface responsiva
+- Adicionar filmes e séries com validação de campos
+- Busca automática de dados via API do TMDB
+- Edição de produções existentes
+- Exclusão com confirmação
+- Filtros por tipo (filme/série), avaliação e texto livre
+- Interface responsiva com Bootstrap
 
 ## Tecnologias Utilizadas
 
-- HTML5
-- CSS3 (Bootstrap)
-- JavaScript
-- Node.js
-- Express
+- **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 5
+- **Backend:** Node.js, Express
+- **API Externa:** [The Movie Database (TMDB)](https://www.themoviedb.org/)
+- **Armazenamento:** Arquivo JSON local
 
 ## Como Executar
 
 1. Clone o repositório
-2. Instale as dependências: `npm install`
-3. Inicie o servidor: `npm start`
-4. Acesse no navegador: `http://localhost:3000`
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. (Opcional) Configure a chave da API do TMDB para busca automática:
+   ```bash
+   export TMDB_API_KEY=sua_chave_aqui
+   ```
+4. Inicie o servidor:
+   ```bash
+   npm start
+   ```
+5. Acesse no navegador: `http://localhost:3000`
+
+## Estrutura do Projeto
+
+```
+Cinefilo/
+├── public/
+│   ├── index.html          # Página principal (adicionar produções)
+│   ├── lista-producoes.html # Lista e filtros de produções
+│   └── app.js              # Lógica do frontend
+├── server.js               # Servidor Express e rotas da API
+├── productions.json         # Armazenamento de dados
+├── package.json
+└── .gitignore
+```
+
+## API
+
+| Método | Rota | Descrição |
+|--------|------|-----------|
+| GET | `/api/productions` | Lista todas as produções |
+| POST | `/api/productions` | Adiciona uma nova produção |
+| PUT | `/api/productions/:id` | Atualiza uma produção |
+| DELETE | `/api/productions/:id` | Remove uma produção |
+| GET | `/api/search-media?query=` | Busca mídia no TMDB |
 
 ## 👤 Autor
 
